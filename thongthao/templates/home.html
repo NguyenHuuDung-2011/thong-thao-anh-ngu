@@ -1,34 +1,47 @@
 {% extends "thongthao/base.html" %}
 {% load static %}
 {% block main_content %}
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{% static "thongthao/image/banner_1.png" %}" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="{% static "thongthao/image/banner_2.png" %}" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="{% static "thongthao/image/banner_3.png" %}" class="d-block w-100">
-      </div>
-      <div class="carousel-item">
-        <img src="{% static "thongthao/image/banner.png" %}" class="d-block w-100" height="100%">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+<!-- Make banners -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static "thongthao/image/banner_1.png" %}" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "thongthao/image/banner_2.png" %}" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "thongthao/image/banner_3.png" %}" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "thongthao/image/banner.png" %}" class="d-block w-100" height="100%">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- End make banners -->
+<!-- Make mission and vision -->
+<div>
+  <div style="text-align: left; margin-top: 50px; margin-bottom: 50px; margin-left: 100px;">
+    <h1 style="font-size: 40px;"><img src="https://www.svgrepo.com/show/533414/bullseye-arrow.svg" style="width: 40px; height: 40px;">  Sứ mệnh</h1>
+    <p style="font-size: 20px;">Mang tiếng Anh thực dụng vào gần hơn với cuộc sống<br>thông qua các chuỗi bài học mang tính thực tế, ứng dụng<br>và hiệu quả cao</p>
+  </div>
+  <div style="text-align: right; margin-top: 50px; margin-bottom: 50px; margin-right: 100px;">
+    <h1 style="font-size: 40px;">Tầm nhìn <img src="https://www.svgrepo.com/show/514119/eye.svg" style="width: 40px; height: 40px;"></h1>
+    <p style="font-size: 20px;">Nhằm tiếp sức, nuôi dưỡng thế hệ trẻ Việt Nam<br>sử dụng thông thạo Anh ngữ một cách tự tin,<br>tự nhiên và chuyên nghiệp. Giỏi tiếng Anh là<br>một công cụ sắc bén trước thế giới không ngừng biến đổi</p>
+  </div>
+</div>
 {% endblock main_content %}
