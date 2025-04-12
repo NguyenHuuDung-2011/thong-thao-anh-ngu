@@ -15,11 +15,61 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  margin: 0px!important;
+  padding: 0px!important;
+  overflow-x: hidden;
+}
+
+.navbar-brand img {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px!important;
+  padding: 0px!important;
+  overflow-x: hidden;
 }
 
 .navbar {
   background-color: #ffffff !important; /* Màu nền */
+  margin: 0px!important; /* Xóa khoảng cách bên ngoài */
+  padding: 0px 20px!important; /* Xóa khoảng cách bên trong */
   padding: 10px 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.nav-link, .dropdown-toggle {
+  display: inline-block;
+  line-height: 1.5; /* Đồng bộ line-height */
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+  padding: 0.5rem 1rem; /* Đồng bộ padding */
+  margin: 0; /* Xóa mọi khoảng cách không mong muốn */
+  align-items: center; /* Căn giữa nội dung bên trong */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+.hover-target {
+  display: block;
+  height: 100%;
+  padding: 10px; /* Khoảng cách bên trong */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+.hover-target:hover {
+  background-color: #fafafa !important; /* Màu nền khi hover */
+  transition: background-color 0.3s ease;
 }
 
 /*
@@ -53,7 +103,7 @@ hr {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 40px;
 }
 /*
  * Remove the gap between audio, canvas, iframes,
