@@ -20,12 +20,6 @@ html {
   overflow-x: hidden;
 }
 
-.navbar-brand img {
-  display: block;
-  margin: 0px;
-  padding: 0px;
-}
-
 * {
   margin: 0;
   padding: 0;
