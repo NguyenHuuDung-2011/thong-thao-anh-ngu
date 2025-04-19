@@ -33,10 +33,26 @@ body {
 }
 
 .navbar {
-  background-color: #ffffff !important; /* Màu nền */
+  background-color: #ffde06 !important; /* Màu nền */
   margin: 0px!important; /* Xóa khoảng cách bên ngoài */
   padding: 0px 20px!important; /* Xóa khoảng cách bên trong */
   padding: 10px 20px;
+}
+
+.nav-item {
+  padding: 13px!important; /* Xóa khoảng cách bên ngoài */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background-color: transparent!important; /* Màu nền trong suốt */
+}
+
+.navbar-brand img {
+  display: block; /* Loại bỏ khoảng trắng mặc định của ảnh */
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng */
+  height: auto; /* Giữ tỷ lệ ảnh */
 }
 
 .navbar-nav {
@@ -58,12 +74,16 @@ body {
   display: block;
   height: 100%;
   padding: 10px; /* Khoảng cách bên trong */
-  transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi */
+  transition: background-color 0.5s ease; /* Hiệu ứng chuyển đổi */
 }
 
 .hover-target:hover {
-  background-color: #fafafa !important; /* Màu nền khi hover */
-  transition: background-color 0.3s ease;
+  background-color: #aa8906 !important; /* Màu nền khi hover */
+  transition: background-color 0.7s ease;
+}
+
+.dropdown-menu {
+  background-color: #ffde06;
 }
 
 /*
